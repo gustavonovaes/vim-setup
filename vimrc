@@ -60,3 +60,7 @@ augroup autosourcing
     autocmd!
     autocmd BufWritePost _vimrc source %
 augroup END
+
+"# CtrlP 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*.swp,*.log,*.cache,*.lock
