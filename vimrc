@@ -64,3 +64,15 @@ augroup END
 "# CtrlP 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*.swp,*.log,*.cache,*.lock
+
+"# NERDTree 
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
+" close vim if only NERDTree is open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" start NERDTree if file is not specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
