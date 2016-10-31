@@ -91,3 +91,8 @@ let g:lightline = {
       \ }
       \ }
 set laststatus=2
+
+"# UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

@@ -7,3 +7,9 @@
 [submodule "/home/gustavo/.vim/bundle/lightline.vim"]
 	path = /home/gustavo/.vim/bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
