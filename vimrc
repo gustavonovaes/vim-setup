@@ -64,6 +64,12 @@ augroup END
 "# CtrlP 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*.swp,*.log,*.cache,*.lock
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
 
 "# NERDTree 
 nmap <leader>n :NERDTreeToggle<CR>
